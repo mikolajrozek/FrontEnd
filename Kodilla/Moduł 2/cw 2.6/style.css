@@ -1,0 +1,21 @@
+.social {
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+.icon-btn {
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+    line-height: 75px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.facebook {
+    background-color: darkblue;
+}
+.facebook:hover {
+    transform: scale(1.10);
+    color: #FFF;
+}

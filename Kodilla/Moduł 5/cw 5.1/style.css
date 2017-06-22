@@ -1,0 +1,20 @@
+.container{
+    margin-top: 2vh;
+}
+.row>h1 {
+    background-color: aqua;
+    padding: 5px;
+}
+.row img {
+    padding: 0;  
+}
+@media (min-width: 768px max-width: 991px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .col-md-3 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,900);
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+}
+.container {
+     margin: 0 auto;
+     max-width: 1200px;
+}
+
+/*.row::before,
+.row::after {
+     clear: both;
+     content: "";
+     display: table;
+}*/
+.hero {
+
+     width: 100%;
+     height: calc(100vh - 50px);
+     background: url(https://static.pexels.com/photos/355988/pexels-photo-355988.jpeg);
+     margin: 0 auto;
+     background-size: cover;
+     background-position: center;
+}
+
+/*[class*= 'col-'] {
+    width: 100%;
+    float: left;
+}
+.col-m-1 {
+     width: 8.33%;
+}
+.col-m-2 {
+     width: 16.66%;
+}
+.col-m-3 {
+     width: 25%;
+}
+.col-m-4 {
+     width: 33.33%;
+}
+.col-m-5 {
+     width: 41.66%;
+}
+.col-m-6 {
+     width: 50%;
+}
+.col-m-7 {
+     width: 58.33%;
+}
+.col-m-8 {
+     width: 66.66%;
+}
+.col-m-9 {
+     width: 75%;
+}
+.col-m-10 {
+     width: 83.33%;
+}
+.col-m-11 {
+     width: 91.66%;
+}
+.col-m-12 {
+     width: 100%;
+}
+.text {
+     margin: 0 auto;
+     max-width: 1230px;
+}
+.text h1 {
+     padding: 5px;
+}
+.text p, h4 {
+     padding: 5px;
+}*/

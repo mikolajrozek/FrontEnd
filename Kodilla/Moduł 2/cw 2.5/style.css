@@ -1,0 +1,35 @@
+.social {
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  width: 500px;
+}
+.icn-btn {
+  width: 75px;
+  height: 75px;
+  border: 0;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 75px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+.twitter {
+  background-color: #4099FF;
+}
+.facebook {
+  background-color: #3B5998;
+}
+.google-plus {
+  background-color: #DB5A3C;
+}
+.instagram {
+  background-color: #5C3D2E;
+}
+.github {
+  background-color: #4183C4;
+}
+.icn-btn:hover {
+  transform: scale(1.10);
+  color: #FFF;
+}

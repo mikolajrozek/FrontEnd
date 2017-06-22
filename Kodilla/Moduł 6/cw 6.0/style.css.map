@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,sFAA8E;AAKtF,IAAI;EACA,IAAI,EAAE,6BAAW;EACjB,KAAK,EAJO,OAAO;;AAMvB,EAAE;EACE,IAAI,EAAE,kCAAgB;EACtB,gBAAgB,EARJ,OAAO;EASnB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;EACd,cAAc,EAAE,SAAS",
+"sources": ["../../Modu%C5%82%206/cw%206.1/_style.sass"],
+"names": [],
+"file": "style.css"
+}

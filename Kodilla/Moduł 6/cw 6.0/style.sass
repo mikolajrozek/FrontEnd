@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext)
+
+$fonts: "Monsterrat", sans-serif
+$kodilla-green: #53B863
+$clr-1: #333
+
+span
+    font: 100% $fonts
+    color: $kodilla-green
+
+h1
+    font: 24px/36px $fonts
+    background-color: $kodilla-green
+    color: white
+    display: block
+    text-transform: uppercase
+    text-align: center
+
+.first
+     color: $clr-1
+     text-decoration: underline
+     text-transform: capitalize
+
+nav
+     ul
+          margin: 0
+          padding: 0
+          list-style: none
+
+     li
+          display: inline-block
+          text-align: center
+          width: 100px
+          height: 50px
+
+     a
+          text-decoration: none
+          padding: 6px 12px
+          color: white
+          background-color: #2c3e50
+          text-transform: uppercase
+          &:hover,
+          &:focus
+               background-color: #34495e

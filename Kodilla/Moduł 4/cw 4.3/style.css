@@ -1,0 +1,81 @@
+body {
+    background-color: #666;
+}
+header {
+     background-color: aqua;
+}
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.logo {
+    padding: 10px;
+}
+header>.container>ul{
+    padding: 0;
+    float: right;
+}
+header>.container ul>li {
+    display: inline-block;
+}
+header>.container ul>li a:hover {
+    color: #FFF;
+}
+header>.container ul>li>a {
+     text-decoration: none;
+     text-transform: uppercase;
+}
+.hero {
+    height: 100vh;
+    background-color: aquamarine
+}
+.hero p {
+    margin-top: 0;
+}
+.gallery::before,
+.gallery::after {
+    clear:both;
+    content: "";
+    display: table;
+}
+.gallery {
+    width: 100%;
+}
+.photo {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.photo:last-of-type {
+    margin-right: 0;
+}
+.map .container img{
+    width: 100%;
+}
+footer {
+    background-color: darkgrey;
+}
+footer .container p {
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (max-width: 767px){
+header .container ul {
+    padding: 0;
+    float: none;   
+}
+header .container ul>li {
+    display: block;
+    text-align: center;
+}
+.gallery .container {
+    padding: 0 10px;
+}
+.photo {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-right: 5%;
+}
+}

@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,900);
+@import url('https://fonts.googleapis.com/css?family=Anton');
+* {
+     box-sizing: border-box;
+}
+body{
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+}
+/* clearfix*/
+.row::before,
+.row::after {
+     clear:both;
+     content: "";
+     display: table;
+}
+/* podzielenie na kolumny*/
+[class*= 'col-']{
+    width: 100%;
+    float: left;
+}
+
+@media (max-width: 767px) {
+header .container ul {
+    float: none;
+}
+header .container ul li {
+    display: block;
+    text-align: center;
+}
+.hero .slogan {
+	width: 100%;
+}
+.col-s-1 {
+     width: 8.33%;
+}
+.col-s-2 {
+     width: 16.66%;
+}
+.col-s-3 {
+     width: 25%;
+}
+.col-s-4 {
+     width: 33.33%;
+}
+.col-s-8 {
+     width: 66.66%;
+}
+.col-s-12 {
+     width: 100%;
+}
+.gallery .col-s-12 .layer {
+    padding-top: calc(100vw - 200px);
+}
+.team .col-s-12 {
+    margin-bottom: calc(100vw - 250px);
+}
+.promo>.col-s-12>.col-s-12 img{
+    margin: 0;    
+}    
+.promo>.col-s-12>.col-s-12 p{
+    margin: 0;
+}
+}
+
+@media (min-width: 768px) {
+.col-m-1 {
+     width: 8.33%;
+}
+.col-m-2 {
+     width: 16.66%;
+}
+.col-m-3 {
+     width: 25%;
+}
+.col-m-4 {
+     width: 33.33%;
+}
+.col-m-8 {
+     width: 66.66%;
+}
+.col-m-12 {
+     width: 100%;
+}
+}
+/*Sekcja naglówka z przyciaskami menu i logiem*/
+.container {
+    margin: 0 auto;
+    background-color: #313332;
+}
+header>nav ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     float: right;
+}
+header>nav ul>li {
+     display: inline-block;
+}
+header>nav ul>li>a {
+     line-height: 50px;
+     padding: 0 20px;
+     color: #FFF;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+header>nav ul>li>a:hover {
+     color: #ccc;
+}
+header>nav>img {
+     padding: 10px;
+}
+/* Sekcja powitalna z grafiką i sloganem*/
+.hero {
+     width: 100%;
+     margin: 0 auto;
+     height: calc(100vh - 50px);
+     background: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8);
+     background-size: cover;
+     background-position: center;
+     overflow: hidden;
+     position: relative;
+}
+.slogan {
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+     width: 600px;
+     padding: 0 10px;
+     background-color: rgba(211,211,211,0.3);
+     float: right;
+}
+.slogan h1 {
+     line-height: 1;
+     color: #FFF;
+     text-transform: uppercase;
+}
+.normal {
+     font-weight: normal;
+}
+/* Sekcja promocyjna z trzema ikonami w jednej lini*/
+.icons {
+     margin: 30px auto;
+     max-width: 1200px;
+     text-align: center;
+     font-size: 80px;
+}
+.icons h1 {
+     font-size: 30px;
+     text-transform: uppercase;
+}
+.icons .icn:hover {
+     color: #00C7E8;
+}
+.icons p {
+     font-size: 20px;
+}
+/* Sekcja z naglówkiem i tekstem*/
+.featured {
+     margin: 30px auto;
+     max-width: 1200px;
+     text-align: center;
+}
+.featured h1 {
+     text-transform: uppercase;
+}
+/* Sekcja galerii ze zdjęciami*/
+.gallery {
+     margin: 20px auto;
+     text-align: center;
+}
+.gallery .col-m-2 img {
+     width: 100%;
+     display: block;
+}
+.gallery [class*='col-'] {
+     position: relative;
+}
+.gallery .layer {
+     position: absolute;
+     width: 100%;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     color: #FFF;
+     opacity: 0;
+     padding-top: calc(8.33vw - 10px);
+     transition: .5s;
+}
+.layer i {
+     text-align: center;
+}
+.gallery [class*='col-']:hover .layer {
+     opacity: 1;
+     cursor: pointer;
+     background: rgba(0, 0, 0, 0.5);
+}
+/* Sekcja pracowników*/
+.team [class*='col-'] {
+     position: relative;
+     text-align: center;
+}
+.team {
+     margin: 50px auto;
+     max-width: 1200px;
+}
+.team img {
+     border-radius: 50%;
+     height: 200px;
+}
+.circle-cover {
+     width: 200px;
+     height: 200px;
+     background: rgba(0, 0, 0, 0.7);
+     display: block;
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     margin: auto;
+     border-radius: 50%;
+     opacity: 0;
+     transition: .5s;
+}
+.circle-cover:hover {
+     opacity: 1;
+}
+.circle-cover span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.team .col-m-3 p {
+     text-align: center;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+}
+/* sekcja promocyjna z grafiką i tekstem*/
+.promo {
+    background: url(https://images.unsplash.com/photo-1476611201721-a021c8d8b1eb);
+    background-size: cover;
+    background-position: center;
+}
+.promo .col-m-12{
+    padding: 0 16.66%;
+}
+.promo .col-m-4 img {
+    height: auto;
+    width: 100%;
+    margin-top: 10vh;
+}
+.promo .col-m-4 p {
+     background-color: rgba(0,0,0, 0.5);
+     color:#FFF;
+     margin: 10vh auto;
+     padding: 10px;
+}
+.promo .italic {
+     font-style: italic;
+}
+/* Sekcja promocyjna z wynikami w liczbach*/
+.numbers {
+     font-family: 'Anton';
+     line-height: 50px;
+     text-align: center;
+     max-width: 1200px;
+     margin: 5vh auto;
+     font-weight: 900;
+     font-size: 50px;
+}
+.numbers p {
+     margin: 0 auto;
+}
+.text {
+     max-width: 1200px;
+     color: #00C7E8;
+     font-size: 25px;
+     font-weight: 900;
+     text-transform: uppercase;
+}
+/* Sekcja z informacjami kontaktowymi, ikonami social media oraz stopka*/
+.footer {
+     margin: 0 auto;
+     width: 100%;
+}
+.footer .col-m-3 .p1 {
+     font-weight: bold;
+     padding-left: 10px;
+}
+.footer .col-m-3 .p2 {
+     float: right;
+     padding-right: 10px;
+}
+.footer>.col-m-12 {
+     color: #FFF;
+     background-color: #313332;
+}
+.footer>.col-m-12>.col-m-3>.col-m-1>.tabb-1>td {
+     margin: 0 auto;
+}
+.footer>.col-m-12>.col-m-3>* {
+     margin: 35px 20px;
+}
+.footer h1 {
+     text-transform: uppercase;
+}
+.footer .col-m-12 .col-m-3 ul  {
+     padding-left: 10px;
+     margin: 0 auto;
+     list-style: none;
+     float: left;
+}
+.footer .col-m-12 .col-m-3 li {
+     display: inline-block;
+     font-size: 25px;
+     margin-left: 5px;
+     padding: 5px 10px;
+     background-color:  #00C7E8;
+     border: 0;
+}
+.ft-d p {
+     margin-bottom: 0;
+     text-align: center;
+     padding: 20px;
+     background-color: #252726;
+}

@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+header .container ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    list-style: none;
+}
+.container ul li {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 1vh;
+    width: 10%;
+}
+li a {
+    text-decoration: none;
+    color: #FFF;
+}
+.hero {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    color: #FFF;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background-color: antiquewhite;
+    margin: 10px;
+    display:flex;
+    min-width: 200px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover {
+    transform: scale(1.10);
+    transition: .5s;
+}
+footer {
+    background-color: aqua;
+    color: #FFF;
+}
+footer .container{
+    display: flex;
+    height: 10vh;
+}
+.el1, .el2, .el3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.el2 {
+    flex-grow: 2;
+}
