@@ -61,11 +61,12 @@ body {
 @media(max-width: 990px){
      .slider .container {
           margin-left: 50%;
-          margin-right: calc((100vw - 1200px) / 2);
+          margin-right: calc((100vw - 1300px) / 2);
           color: #FFF;
           display: inline-block;
      }
      .over {
           height: 140px;
+          overflow: hidden;
      }
 }
