@@ -38,41 +38,54 @@ body {
      background: #d8d7d6;
 }
 
+/*.slider .container {
+     margin-left: 50%;
+     margin-right: calc((100vw - 1170px) / 2);
+}*/
+
+.in-slider {
+     overflow-x: scroll;
+}
+
 .slider .container .row {
-     display: flex;
-     flex-flow: row;
+/*     display: flex;
+     flex-flow: row;*/
 }
 @media (min-width: 991px) {
      .slider .container {
           margin-left: 50%;
+          margin-right: calc((100vw - 1214px) / 2);
           color: #FFF;
-          display: flex;
+          display: inline-block;
      }
      .over {
+          height: 140px;
           overflow: hidden;
      }
-     .over:hover {
+     /*.over:hover {
           overflow-x: scroll;
-     }
-     .over::-webkit-scrollbar {
+     }*/
+     /*.over::-webkit-scrollbar {
           display: none;
-     }
+     }*/
 
 }
 @media(max-width: 990px){
      .slider .container {
-          margin-left: 30%;
+          margin-left: 50%;
+          margin-right: calc((100vw - 1200px) / 2);
           color: #FFF;
-          display: flex;
+          display: inline-block;
      }
      .over {
+          height: 140px;
           overflow: hidden;
      }
-     .over:hover {
+     /*.over:hover {
           overflow-x: scroll;
-     }
-     .over::-webkit-scrollbar {
+     }*/
+     /*.over::-webkit-scrollbar {
           display: none;
-     }
+     }*/
 
 }
