@@ -10,37 +10,54 @@ body {
 .jumbotron {
      background:url(https://static.pexels.com/photos/355988/pexels-photo-355988.jpeg);
      background-size: cover;
-     height: calc(100vh - 250px);
+     height: 100vh;
+}
+.jumbotron span {
+     color:#FFF;
+     position: absolute;
+     left:0;
+     top: 50%;
+     transform: rotate(270deg);
+     text-transform: uppercase;
 }
 .promo {
      margin: 30px auto;
      background: url(https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg);
      background-size: cover;
-     height: calc(100vh - 500px);
+     height: 100vh;
 }
 .pink {
-     background: #f4428f;
+     background: #F9949C;
 }
 .violet {
-     background: #8c41f4;
+     background: #60607B;
 }
-.photo {
+.photo-1 {
      background: url(https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg);
      background-size: cover;
 }
-.plum {
-     background: #d742f4;
+.photo-2 {
+     background: url(https://static.pexels.com/photos/417142/pexels-photo-417142.jpeg);
+     background-size: cover;
 }
-.yellow {
-     background: #f4f442;
+.photo-3 {
+     background: url(https://static.pexels.com/photos/358385/pexels-photo-358385.jpeg);
+     background-size: cover;
 }
-.grey {
-     background: #d8d7d6;
+.dark-pink {
+     background: #BC8CBC;
+}
+.green {
+     background: #7EC99D;
 }
 
 .slider .container {
      margin-left: 50%;
      margin-right: calc((100vw - 1170px) / 2);
+}
+.slider .container [class*='col-'] {
+     height: 200px;
+     padding: 50px 40px;
 }
 .in-slider {
      overflow-x: scroll;
@@ -54,7 +71,7 @@ body {
           display: inline-block;
      }
      .over {
-          height: 140px;
+          height: 400px;
           overflow: hidden;
      }
 }
@@ -66,7 +83,7 @@ body {
           display: inline-block;
      }
      .over {
-          height: 140px;
+          height: 179px;
           overflow: hidden;
      }
 }
