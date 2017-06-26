@@ -31,9 +31,7 @@ body {
 .jumbotron .container {
      color: #FFF;
 }
-.jumbotron p{
-     margin-top: 70%;
-}
+
 .promo {
      margin: 30px auto;
      background: url(https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg);
@@ -83,7 +81,6 @@ body {
      margin-left: 50%;
      margin-right: calc((100vw - 1170px) / 2);
 }*/
-
 .in-slider {
      overflow-x: scroll;
 }
@@ -91,7 +88,18 @@ body {
 @media (min-width: 991px) {
      .slider .container [class*='col-'] {
           height: 200px;
-          padding: 20px 30px;
+          padding: 10px 10px;
+     }
+     .jumbotron .container .col-md-6 {
+          position: absolute;
+          top: 40%;
+          left: 10%;
+     }
+     #mobile {
+          position: absolute;
+          bottom: 0;
+          top: 15%;
+          right: 0;
      }
      .slider .container {
           margin-left: 50%;
@@ -99,24 +107,37 @@ body {
           color: #FFF;
           display: inline-block;
      }
+     .photo-1 .heart {
+          margin-left: 80px;
+          font-size: x-large;
+     }
+     .photo-3 .heart {
+          margin-left: 80px;
+          font-size: x-large;
+     }
      .over {
           height: 400px;
           overflow: hidden;
      }
 }
-@media(max-width: 990px) {
+@media(min-width: 1200px) {
      .slider .container [class*='col-'] {
           height: 200px;
-          padding: 0 10px;
+          padding: 1% 2%;
+     }
+     #mobile {
+          position: absolute;
+          top: 15%;
+          right: 15%;
      }
      .photo-1 .heart {
-          margin-left: 20px;
+          margin-left: 40%;
      }
      .photo-2 .heart {
-          margin-left: 200px;
+          margin-left: 70%;
      }
      .photo-3 .heart {
-          margin-left: 20px;
+          margin-left: 40%;
      }
      .slider .container {
           margin-left: 50%;
