@@ -7,18 +7,32 @@ body {
      margin: 0 auto;
      max-width: 1200px;
 }
+.container .text {
+     margin-bottom: 20px;
+}
+#mobile {
+     position: absolute;
+     bottom: 0;
+     top: 15%;
+     right: 20%;
+}
 .jumbotron {
-     background:url(https://static.pexels.com/photos/355988/pexels-photo-355988.jpeg);
+     background:url(https://static.pexels.com/photos/368893/pexels-photo-368893.jpeg);
      background-size: cover;
      height: 100vh;
 }
-.jumbotron span {
-     color:#FFF;
+.jumbotron .container span {
      position: absolute;
      left:0;
      top: 50%;
      transform: rotate(270deg);
      text-transform: uppercase;
+}
+.jumbotron .container {
+     color: #FFF;
+}
+.jumbotron p{
+     margin-top: 70%;
 }
 .promo {
      margin: 30px auto;
@@ -33,7 +47,7 @@ body {
      background: #60607B;
 }
 .photo-1 {
-     background: url(https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg);
+     background: url(https://static.pexels.com/photos/207166/pexels-photo-207166.jpeg);
      background-size: cover;
 }
 .photo-2 {
@@ -50,7 +64,21 @@ body {
 .green {
      background: #7EC99D;
 }
-
+.arrow {
+     margin-left: 15px;
+}
+.photo-1 .heart {
+     margin-left: 90px;
+     font-size: x-large;
+}
+.photo-2 .heart {
+     margin-left: 300px;
+     font-size: x-large;
+}
+.photo-3 .heart {
+     margin-left: 90px;
+     font-size: x-large;
+}
 /*.slider .container {
      margin-left: 50%;
      margin-right: calc((100vw - 1170px) / 2);
@@ -63,7 +91,7 @@ body {
 @media (min-width: 991px) {
      .slider .container [class*='col-'] {
           height: 200px;
-          padding: 50px 40px;
+          padding: 20px 30px;
      }
      .slider .container {
           margin-left: 50%;
@@ -78,7 +106,17 @@ body {
 }
 @media(max-width: 990px) {
      .slider .container [class*='col-'] {
-          padding: 50px 40px;
+          height: 200px;
+          padding: 0 10px;
+     }
+     .photo-1 .heart {
+          margin-left: 20px;
+     }
+     .photo-2 .heart {
+          margin-left: 200px;
+     }
+     .photo-3 .heart {
+          margin-left: 20px;
      }
      .slider .container {
           margin-left: 50%;
@@ -87,7 +125,7 @@ body {
           display: inline-block;
      }
      .over {
-          height: 179px;
+          height: 400px;
           overflow: hidden;
      }
 }
