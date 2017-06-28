@@ -17,7 +17,7 @@ body {
      right: 20%;
 }
 .jumbotron {
-     background:url(https://static.pexels.com/photos/368893/pexels-photo-368893.jpeg);
+     background:url(https://static.pexels.com/photos/368893/pexels-photo-368893.jpeg) 50% 0 repeat fixed;
      background-size: cover;
      height: 100vh;
 }
@@ -34,7 +34,7 @@ body {
 
 .promo {
      margin: 30px auto;
-     background: url(https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg);
+     background: url(https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg) 50% 0 repeat fixed;
      background-size: cover;
      height: 100vh;
 }
