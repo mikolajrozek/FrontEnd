@@ -203,13 +203,21 @@ body {
           right: 35%;
      }
      .mobile>img {
+<<<<<<< HEAD
           height: 120%;
+=======
+          height: 100%;
+>>>>>>> 600a8535eaa8f4d01325ca96784f7507204121c7
      }
      .photo-1 .heart {
           margin-left: 30%;
      }
      .photo-2 .heart {
+<<<<<<< HEAD
           margin-left: 65%;
+=======
+          margin-left: 67%;
+>>>>>>> 600a8535eaa8f4d01325ca96784f7507204121c7
      }
      .photo-3 .heart {
           margin-left: 30%;
