@@ -1,0 +1,22 @@
+body {
+     background-color: #0769ad;
+}
+
+.carousel {
+     overflow: hidden;
+     background-color: #fff;
+     border-radius: 8px;
+}
+
+ul {
+     width: 2000px;
+     margin: 0;
+     padding: 0;
+}
+
+li {
+     padding: 5px 0;
+     width: 400px;
+     float: left;
+     list-style: none;
+}
