@@ -1,0 +1,16 @@
+.column {
+     float: left;
+     width: 200px;
+     height: 400px;
+     text-align: center;
+     border-right-style: solid;
+}
+
+.column-title {
+     border-bottom-style: double;
+}
+
+li {
+     border: solid 1px "black";
+     list-style: none;
+}
