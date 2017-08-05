@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,900);
+body {
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+}
+.container {
+     margin: 0 auto;
+     max-width: 1200px;
+}
+.container .text {
+     margin-bottom: 20px;
+}
+/*.mobile {
+     position: absolute;
+     bottom: 0;
+     top: 15%;
+     right: 20%;
+}*/
+.jumbotron {
+     background:url(https://static.pexels.com/photos/368893/pexels-photo-368893.jpeg) 50% 0 repeat fixed;
+     background-size: cover;
+     min-height: 100vh;
+}
+/*.jumbotron .container span {
+     position: absolute;
+     left:0;
+     top: 50%;
+     transform: rotate(270deg);
+     text-transform: uppercase;
+}*/
+.jumbotron::before {
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     right: 0;
+     height: 100vh;
+     z-index: -1;
+}
+.jumbotron .container {
+     color: #FFF;
+}
+.p-footer {
+     margin: 30px auto;
+}
+.promo {
+     margin: 30px auto;
+     background: url(https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg) center 0 repeat fixed;
+     background-size: cover;
+     height: 100vh;
+}
+.pink {
+     background: #F9949C;
+}
+.violet {
+     background: #60607B;
+}
+.photo-1 {
+     background: url(https://static.pexels.com/photos/207166/pexels-photo-207166.jpeg);
+     background-size: cover;
+}
+.photo-2 {
+     background: url(https://static.pexels.com/photos/417142/pexels-photo-417142.jpeg);
+     background-size: cover;
+}
+.photo-3 {
+     background: url(https://static.pexels.com/photos/358385/pexels-photo-358385.jpeg);
+     background-size: cover;
+}
+.dark-pink {
+     background: #BC8CBC;
+}
+.green {
+     background: #7EC99D;
+}
+.arrow {
+     margin-left: 15px;
+}
+.photo-1 .heart {
+     margin-left: 90px;
+     font-size: x-large;
+}
+.photo-2 .heart {
+     margin-left: 300px;
+     font-size: x-large;
+}
+.photo-3 .heart {
+     margin-left: 90px;
+     font-size: x-large;
+}
+/*.slider .container {
+     margin-left: 50%;
+     margin-right: calc((100vw - 1170px) / 2);
+}*/
+.in-slider {
+     overflow-x: scroll;
+}
+.over {
+     overflow: hidden;
+}
+@media (max-width: 767px) {
+     .container {
+          width: 666px;
+     }
+     .slider .container [class*='col-'] {
+          height: 320px;
+          padding: 2% 2%;
+     }
+     .jumbotron .container span {
+          position: absolute;
+          left: -5%;
+          top: 50%;
+          transform: rotate(270deg);
+          text-transform: uppercase;
+     }
+     .jumbotron>.container .col-sm-5 {
+          position: absolute;
+          top: 40%;
+          left: 10%;
+     }
+     .mobile {
+          position: absolute;
+          top: 35%;
+          right: 0;
+     }
+     .mobile>img {
+          height: auto;
+          width: 550px;
+     }
+     .slider .container {
+          margin-left: 50%;
+          margin-right: calc((100vw - 1214px) / 2);
+          color: #FFF;
+          display: inline-block;
+     }
+     .photo-1 .heart {
+          margin-left: 10%;
+          font-size: x-large;
+     }
+     .photo-2 .heart {
+          margin-left: 55%;
+     }
+     .photo-3 .heart {
+          margin-left: 10%;
+          font-size: x-large;
+     }
+     .over {
+          height: 640px;
+          overflow: hidden;
+     }
+}
+@media (min-width: 768px) {
+     .container {
+          width: 730px;
+     }
+     .slider .container [class*='col-'] {
+          height: 320px;
+          padding: 2% 2%;
+     }
+     .jumbotron .container span {
+          position: absolute;
+          left: -5%;
+          top: 50%;
+          transform: rotate(270deg);
+          text-transform: uppercase;
+     }
+     .jumbotron>.container .col-sm-5 {
+          position: absolute;
+          top: 40%;
+          left: 10%;
+     }
+     .mobile {
+          position: absolute;
+          top: 35%;
+          right: 0;
+     }
+     .mobile>img {
+          height: auto;
+          width: 550px;
+     }
+     .slider .container {
+          margin-left: 50%;
+          margin-right: calc((100vw - 1214px) / 2);
+          color: #FFF;
+          display: inline-block;
+     }
+     .photo-1 .heart {
+          margin-left: 10%;
+          font-size: x-large;
+     }
+     .photo-2 .heart {
+          margin-left: 55%;
+     }
+     .photo-3 .heart {
+          margin-left: 10%;
+          font-size: x-large;
+     }
+     .over {
+          height: 640px;
+          overflow: hidden;
+     }
+}
+@media (min-width: 992px) {
+     .container {
+          width: 960px;
+     }
+     .slider .container [class*='col-'] {
+          height: 220px;
+          padding: 1% 1%;
+     }
+     .jumbotron .container span {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: rotate(270deg);
+          text-transform: uppercase;
+     }
+     .jumbotron>.container .col-md-5 {
+          position: absolute;
+          top: 40%;
+          left: 10%;
+     }
+     .mobile {
+          position: absolute;
+          top: 25%;
+          right: 0;
+     }
+     .mobile>img {
+          height: auto;
+          width: 600px;
+     }
+     .slider .container {
+          margin-left: 50%;
+          margin-right: calc((100vw - 1214px) / 2);
+          color: #FFF;
+          display: inline-block;
+     }
+     .photo-1 .heart {
+          margin-left: 80px;
+          font-size: x-large;
+     }
+     .photo-3 .heart {
+          margin-left: 80px;
+          font-size: x-large;
+     }
+     .over {
+          height: 445px;
+          overflow: hidden;
+     }
+}
+@media(min-width: 1200px) {
+     .in-slider {
+          height: 470px;
+          /*padding: 1% 1%;*/
+     }
+     .jumbotron .container span {
+          position: absolute;
+          top: 45%;
+          transform: rotate(270deg);
+          text-transform: uppercase;
+     }
+     .jumbotron>.container .col-lg-5 {
+          position: absolute;
+          top: 37%;
+          left: 5%;
+     }
+     .mobile {
+          position: absolute;
+          top: 20%;
+          right: 25%;
+     }
+     .mobile>img {
+          height: auto;
+          width: 650px;
+     }
+     .photo-1 .heart {
+          margin-left: 30%;
+     }
+     .photo-2 .heart {
+          margin-left: 67%;
+     }
+     .photo-3 .heart {
+          margin-left: 30%;
+     }
+     .slider .container {
+          margin-left: 50%;
+          margin-right: calc((100vw - 1000px) / 2);
+          color: #FFF;
+          display: inline-block;
+     }
+     /*.over {
+          height: 440px;
+          overflow: hidden;
+     }*/
+}
