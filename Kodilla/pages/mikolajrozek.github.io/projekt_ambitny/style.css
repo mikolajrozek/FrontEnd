@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,900);
-@import url(http://pl.allfont.net/allfont.css?fonts=merriweather-heavy-italic);
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900,900i');
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
 body {
      margin: 0;
      font-family: 'Open Sans', sans-serif;
@@ -25,7 +30,8 @@ body {
 .logo p {
 	display: inline-block;
 	color: white;
-	font-family: 'Merriweather Heavy Italic', arial;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
 	margin-left: 5px;
 	font-size: 40px;
 	line-height: 54px;
@@ -46,6 +52,15 @@ body {
 }
 .jumbotron .container {
      color: #FFF;
+}
+.mobile {
+	position: absolute;
+	top: 15%;
+	right: 9%;
+}
+.mobile img {
+	height: auto;
+	width: 90%;
 }
 .p-footer {
      margin: 30px auto;
@@ -96,7 +111,6 @@ body {
      margin-left: 90px;
      font-size: x-large;
 }
-
 .in-slider {
      overflow-x: scroll;
 }
@@ -175,39 +189,41 @@ body {
 	font-size: 24px;
 	color: lightgrey;
 }
-
 @media screen and (max-width: 767px) {
      .container {
-          width: 666px;
+          width: 660px;
      }
      .slider .container [class*='col-'] {
-          height: 320px;
+          height: 100px;
           padding: 2% 2%;
      }
-     .jumbotron .container span {
+	.in-slider {
+		overflow-x: unset;
+	}
+     .container .side-text {
           position: absolute;
-          left: -5%;
-          top: 50%;
+          left: -8%;
+          top: 38%;
           transform: rotate(270deg);
           text-transform: uppercase;
      }
      .jumbotron>.container .col-sm-5 {
           position: absolute;
-          top: 40%;
+          top: 30%;
           left: 10%;
      }
      .mobile {
-          position: absolute;
-          top: 57%;
-          right: 25%;
+		position: absolute;
+	     top: 47%;
+	     right: -28%;
      }
-     .mobile>img {
+     .mobile img {
           height: auto;
-          width: 350px;
+    		width: 60%;
      }
      .slider .container {
-          margin-left: 50%;
-          margin-right: calc((100vw - 1214px) / 2);
+          margin-left: 2%;
+          margin-right: calc((100vw - 772px) / 2);
           color: #FFF;
           display: inline-block;
      }
@@ -223,11 +239,7 @@ body {
           font-size: x-large;
      }
      .over {
-          height: 640px;
-          overflow: hidden;
-     }
-	.side-text {
-		visibility: hidden;
+          height: 700px;
      }
 	.promo .row {
 		position: relative;
@@ -236,9 +248,20 @@ body {
 		position: absolute;
 		top: 50vh
 	}
+	.btn {
+		position: absolute;
+		top: 59px;
+		right: 15px;
+		border-radius: 0 4px 4px 0;
+	}
+	.footer li {
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-right: 5px;
+	}
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
      .container {
           width: 730px;
      }
@@ -259,16 +282,16 @@ body {
           left: 10%;
      }
      .mobile {
-          position: absolute;
-          top: 35%;
-          right: 0;
+		position: absolute;
+	     top: 26%;
+	     right: -18%;
      }
-     .mobile>img {
+     .mobile img {
           height: auto;
-          width: 550px;
+          width: 80%;
      }
      .slider .container {
-          margin-left: 50%;
+          margin-left: 2%;
           margin-right: calc((100vw - 772px) / 2);
           color: #FFF;
           display: inline-block;
@@ -288,6 +311,19 @@ body {
           height: 640px;
           overflow: hidden;
      }
+	.promo .row {
+		position: relative;
+	}
+	.promo [class*='col-'] {
+		position: absolute;
+		top: 50vh
+	}
+	.btn {
+		position: absolute;
+		top: 66px;
+		right: 15px;
+		border-radius: 0 4px 4px 0;
+	}
 }
 @media (min-width: 992px) {
      .container {
@@ -310,13 +346,13 @@ body {
           left: 10%;
      }
      .mobile {
-          position: absolute;
-          top: 25%;
-          right: 0;
+		position: absolute;
+	     top: 20%;
+	     right: 0%;
      }
-     .mobile>img {
+     .mobile img {
           height: auto;
-          width: 600px;
+          width: 85%;
      }
      .slider .container {
           margin-left: 50%;
@@ -346,8 +382,14 @@ body {
 	.mid-section, .last-section, .footer {
 		padding: 7% 0;
 	}
+	.btn {
+		position: absolute;
+		top: 66px;
+		right: 15px;
+		border-radius: 0 4px 4px 0;
+	}
 }
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
      .in-slider {
           height: 470px;
      }
@@ -364,13 +406,13 @@ body {
           left: 10%;
      }
      .mobile {
-          position: absolute;
-          top: 20%;
-          right: 25%;
+		position: absolute;
+	     top: 15%;
+	     right: 9%;
      }
-     .mobile>img {
+     .mobile img {
           height: auto;
-          width: 650px;
+          width: 90%;
      }
      .photo-1 .heart {
           margin-left: 30%;
@@ -387,4 +429,10 @@ body {
           color: #FFF;
           display: inline-block;
      }
+	.btn {
+		position: absolute;
+		top: 66px;
+		right: 15px;
+		border-radius: 0 4px 4px 0;
+	}
 }

@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "TitilliumText22L Lt";
+    src: url("./fonts/");
+}
+
+/* == GENERAL ==*/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "TitilliumText22L";
+    font-size: 16px;
+    color: #afafaf;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body {
+    background-image: url("../img/backg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+header {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px black;
+}
+
+img {
+    filter: drop-shadow(-2px -2px 0 rgba(0, 0, 0, .6));
+    display: block;
+    margin: 0 auto;
+    opacity: .2;
+}
+
+ul {
+    list-style: none;
+}
+
+/* == MAIN SECTION == */
+
+main {
+    margin:  0 auto;
+    width: 55%;
+}
+
+.container-left {
+    float: left;
+}
+
+.container-right {
+    float: right;
+}
+
+.form {
+    background-color: #f4f4f4;
+    border: 20px solid rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    background-clip: padding-box;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    position: relative;
+}
+
+input:first-of-type {
+    margin-top: 18px;
+}
+
+.form input, select, textarea {
+    margin-bottom: 20px;
+    padding: 0 80px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+textarea {
+    padding-top: 20px;
+}
+
+.form input[type="username"] {
+    background: url("../img/user.png") no-repeat;
+    background-position: 15px;
+}
+
+.form input[type="password"] {
+    background: url("../img/pass.png") no-repeat;
+    background-position: 15px;
+}
+
+.form input[type="email"] {
+    background: url("../img/mail.png") no-repeat;
+    background-position: 15px;
+}
+
+.form input[type="phone"] {
+    background: url("../img/phone.png") no-repeat;
+    background-position: 15px;
+}
+
+.form select {
+    background: url("../img/location.png") no-repeat 15px, url("../img/arrow.png") no-repeat 97% center;
+    -webkit-appearance: button;
+    -moz-appearance: none;
+    appearance: button;
+}
+
+.form input[type="submit"] {
+    background: #a1d63e;
+    margin: 0 0 20px;
+    padding: 0;
+    height: 50px;
+    color: white;
+    font-size: 1.5em;
+    border: 1px solid #3b9a00;
+}
+
+input[type="submit"]:hover {
+    opacity: .6;
+}
+
+.sign-in input, .send input, .done input, .subscribe input, .thanks input {
+    width: 150px;
+    float: right;
+}
+
+.send, .subscribe  {
+    float:left;
+}
+
+.check, .sign-in, .send, .done, .subscribe, .thanks {
+    display: inline;
+}
+
+.subscribe-form .thanks input {
+    background: #f55263;
+    border: 1px solid #a2202a;
+}
+
+.check .checkbox {
+    width:  25px;
+    height:  25px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fafafa;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+input, select:focus {
+        outline: 0;
+}
+
+.checkbox:checked:after {
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    left: 4px;
+    top: 4px;
+    border-radius: 3px;
+    position: absolute;
+    background: #a1d63e;
+}
+
+.sendemail-form textarea {
+    padding-left: 20px;
+    height: 230px;
+}
+
+/* == MEDIA QUERIES == */
+@media (max-width: 320px) {
+    header, main {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    .form input, select, textarea {
+        padding: 0 65px;
+    }
+    input[type="checkbox"] {
+        padding: 5px;
+    }
+    .send, .subscribe  {
+    float: none;
+    }
+    .sign-in input, .send input, .done input, .subscribe input, .thanks input {
+        width: 100%;
+        float: right;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+    header, main {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    .form input, select, textarea {
+        padding: 0 65px;
+    }
+    input[type="checkbox"] {
+        padding: 5px;
+    }
+.send, .subscribe  {
+    float: none;
+    }
+    .sign-in input, .send input, .done input, .subscribe input, .thanks input {
+        width: 100%;
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    main {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        width: 65%;
+    }
+}

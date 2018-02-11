@@ -1,0 +1,295 @@
+body {
+	margin-top: 50px;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p.lead {
+	font-weight: normal;
+}
+p {
+	margin: 0 0 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
+}
+
+img {
+	max-width: 100%;
+}
+button, input, .btn, a.btn {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: white;
+}
+
+.btn {
+	font-weight: bold;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn-success {
+	background: #79b044;
+	border: none;
+}
+
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
+
+.btn-danger {
+	background-color: #dd5638;
+	border-color: #d95131;
+}
+
+.text-danger, li.text-danger a {
+	color: #dd5638;
+}
+
+a.text-danger:hover {
+	color: #e55939;
+}
+
+i.ci {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background: url('../img/icon-sprite-1.png') no-repeat;
+    background-size: cover; 
+}
+
+.ci.ci-watch 	    { background-position: 0 0; }
+.ci.ci-computer		{ background-position: -70px 0; }
+.ci.ci-calendar		{ background-position: -158px 0; }
+.ci.ci-crab	        { background-position: -238px 0; }
+.ci.ci-mouse	    { background-position: -315px 0; }
+.ci.ci-dumbell		{ background-position: -395px 0; }
+
+#hero {
+	background: url('../img/photo_1.jpg') 50% 0 no-repeat fixed;
+	min-height: 500px;
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#hero article { 
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#hero .hero-text {
+	margin-top: 30px;
+}
+
+#price-timeline {
+	margin: 30px 0 60px;
+	text-align: center;
+}
+
+#price-timeline .price {
+	display: inline-block;
+	width: 30%;
+	margin: 0 2% 0 0;
+	background: #3e4249;
+	padding: 10px 20px 30px;
+	position: relative;
+	vertical-align: top;
+}
+
+#price-timeline .price.active {
+	background: #dd5638;
+}
+
+#price-timeline .price span {
+	background: #101010;
+	display: block;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 24px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	position: absolute;
+	bottom: -35px;
+	left: 50%;
+	margin-left: -35px;
+}
+
+#price-timeline h4 {
+	margin: 0 0 10px;
+}
+
+#price-timeline h4 small {
+	color: white;
+	font-weight: bold;
+	display: block;
+}
+
+.row + .row {
+	margin-top: 20px;
+}
+
+section {
+	padding: 80px 0;
+}
+
+.section-header {
+	text-align: center;
+}
+
+section h2 {
+	margin: 20px 0 40px;
+}
+
+section h3 {
+	margin: 30px 0 10px;
+}
+
+section.main-content {
+	padding: 40px 0;
+}
+
+#optin {
+	background: #3e4249;
+	padding: 20px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 1.2em;
+}
+
+#optin p {
+	margin: 7px 0 0 0;
+}
+
+#features {
+	background: #3e4249;
+	color: white;
+	text-align: center;
+}
+
+#quality {
+	background: white;
+}
+
+#projects {
+	text-align: center;
+}
+
+#video {
+	background: url('../img/photo_4.jpg') 50% 50% repeat fixed;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+footer {
+	background: #3e4249;
+	color: white;
+	padding: 20px 0 10px;
+	font-size: 12px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer a:link, footer a:visited {
+	color: white;
+}
+
+footer a:hover {
+	color: #dd5638;
+}
+
+footer li.signup-link a {
+	color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+	font-weight: bold;
+}
+.fa {
+    font-size: 2em;
+}
+
+@media screen and (max-width : 991px) {
+	#instructor .container {
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width : 768px) {
+	.logo {
+		width: 50%;
+	}
+	
+	#optin p {
+		margin: 0 0 10px;
+	}
+	
+	#featurette iframe {
+		height: 240px;
+	}
+	
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+	}
+}
+
+@media screen and (max-width : 568px) {
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 22px;
+	}
+	
+	#instructor .num span {
+		font-size: 16px;
+	}
+	
+	.resource {
+		width: 100%;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,134 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Glegoo:400,700');
+
+body {
+    font-size: 18px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Glegoo', serif;
+}
+hr {
+    border-color: #666;
+    border-width: 1px;
+    margin-bottom: 3%;
+}
+.container {
+    max-height: 80%;
+    padding: 2%;
+    background-color: #e2e2e2;
+    box-shadow: 2px 2px 5px #333;
+    margin-bottom: 2%;
+}
+.row {
+    margin-top: 2%;
+}
+.bar {
+    background-color: #333;
+    height: 3em;
+    width: 100%;
+}
+.navbar-nav {
+    flex-direction: row;
+    justify-content:flex-end; 
+}
+.nav {
+    flex-wrap: nowrap;
+}
+.navbar-text {
+    font-style: italic;
+    letter-spacing: 0.5em;
+    color: white;
+    margin: 0;
+}
+.header ul a {
+    text-decoration: none;
+    color: white;
+}
+.header ul a:hover {
+    border-bottom: 1px solid lightblue;
+}
+.header ul {
+    margin-right: 10%;
+    justify-content: space-between;
+}
+.header ul li {
+    margin-right: 20%;
+}
+.header .photo {
+    display: block;
+    margin: 0 auto 2%;
+    border-radius: 10%;
+    box-shadow: 2px 3px 10px #333;
+}
+.header h3 {
+    text-align: center;
+}
+.icons a {
+    color: black;
+    font-size: 3em;
+    margin-right: 1%;
+}
+.icons {
+    text-align: center;
+}
+.icons i:hover {
+    text-decoration: none;
+    color: black;
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+.header .name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+}
+.cv-info:hover {
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
+}
+.cv-info {
+    height: 305px;
+    background-image: url(../img/mrozek_cv.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    transform: scale(0.9);
+    transition: 0.3s;
+    transition-timing-function: linear;
+    margin-bottom: 1%;
+}
+.badge {
+    display: block;
+    margin: 0 auto 1%;
+    padding: 1% 15%;
+    background-color: dimgrey;
+    border-radius: 2%;
+    font-size: 2em;
+}
+.main p {
+   margin: 0 auto;
+}
+.project1, .project2, .project3, .project4 {
+    height: 305px;
+    background-image: url(../img/project_1.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    transform: scale(0.9);
+    transition: 0.3s;
+    transition-timing-function: linear;
+    margin-bottom: 1%;
+}
+.project2{
+    background-image: url(../img/project_2.jpg);
+}
+.project3 {
+    background-image: url(../img/project_3.jpg);
+}
+.project4 {
+    background-image: url(../img/project_4.jpg);   
+}
+[class*='project']:hover {
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
+}

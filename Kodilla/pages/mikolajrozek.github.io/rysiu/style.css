@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin;
+    src: url(fonts/JosefinSans-Regular.ttf);
+}
+
+body {
+    font-family: Josefin, sans-serif;
+    font-size: 16px;
+}
+.hideme {
+    opacity: 0;
+}
+
+.navbar-header {
+    font-family: Lobster, cursive;
+    max-width: 60%;
+}
+.navbar{
+    margin-bottom: 0;
+}
+
+ul.nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul.nav a:hover {
+    color: #777 !important;
+    padding-bottom: 1px;
+    border-bottom: solid 4px aqua;
+}
+
+.jumbotron {
+    max-width: 100%;
+    min-height: 70vh;
+    margin-bottom: 50px;
+    background: url('img/pexels-photo-sm.jpg') 50% 0 fixed no-repeat;
+    background-size: cover;
+}
+.bkg {
+    background: grey;
+    opacity: 0.7;
+}
+
+h1.greeting {
+    margin-top: 20%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.about_me, .office {
+    margin-bottom: 50px;
+}
+
+.about_me p, .office p {
+    text-align: justify;
+}
+
+.office .hours a {
+    color: black;
+    text-decoration: none;
+}
+
+hr.style1 {
+    border-top: 4px double #8c8b8b;
+}
+
+.photo {
+    min-height: 272px;
+    background: url('img/image001.gif') center top no-repeat;
+}
+
+.qualifications .container  {
+	margin: 0 auto;
+	max-width: 100%;
+	margin-bottom: 8%;
+}
+
+.qualifications .container img {
+	padding: 0;
+ margin-bottom: 1em;
+	width: 100%;
+}
+
+.qualifications .container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #eee;
+    padding-top: 1%;
+    margin: 0;
+}
+
+footer .copyright a {
+    color: black;
+}
+
+footer .copyright a:hover {
+    text-decoration: none;
+    font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+    .navbar-header {
+        max-width: 100%;
+        margin-left: 0 !important;
+    }
+    .navbar-brand {
+        margin: 0 40px;
+    }
+
+    ul.nav a:hover {
+    color: #777 !important;
+    padding-bottom: 1px;
+    margin: 0 auto;
+    width: 150px;
+    border-bottom: solid 4px aqua;
+    }
+
+    .jumbotron .greeting {
+        margin-top: 10%;
+        font-size: 1.5em !important;
+    }
+
+    .jumbotron {
+    max-width: 100%;
+    min-height: 30vh;
+    margin-bottom: 50px;
+    background: url('img/pexels-photo-sm.jpg') 50% 0 fixed no-repeat;
+    background-size: cover;
+}
+    iframe {
+        width: 100%;
+    }
+    .qualifications .container img:hover {
+        transform: scale(1);
+    }
+    footer {
+        padding-top: 2%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    .qualifications .container img:hover {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 992px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    iframe {
+        width: 100%;
+    }
+}
