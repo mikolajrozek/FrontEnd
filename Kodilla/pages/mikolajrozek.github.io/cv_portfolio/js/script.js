@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$('.link').mouseenter(function() {
 		$(this).css({
-			fontSize: '1.05em',
+			fontSize: '1.2em',
 			transition: '0.6s'
 		});
 	}).mouseleave(function() {
@@ -32,4 +32,5 @@ $(document).ready(function() {
 	$('.project4').click(function(){
 	    window.open("https://jsfiddle.net/kezoore/ud9rgmaf/",'_blank');
 	});
+
 });
